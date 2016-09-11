@@ -26,9 +26,9 @@
     <version>7.3.0</version>
   </parent>
 
-  <groupId>org.everit.osgi.bundles</groupId>
-  <artifactId>org.everit.osgi.bundles.eclipse.sun.attach</artifactId>
-  <version>0.0.0-v20160517</version>
+  <groupId>org.everit.osgi.extension</groupId>
+  <artifactId>org.everit.osgi.extension.sun.attach</artifactId>
+  <version>0.0.0-v20160911</version>
   <packaging>bundle</packaging>
 
   <name>Everit - Sun Attach API for Eclipse</name>
@@ -82,7 +82,7 @@
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
 			<Bundle-ClassPath>external:$java.home$/../lib/tools.jar</Bundle-ClassPath>
             <Export-Package>
-              com.sun.tools.attach
+              com.sun.tools.attach,com.sun.tools.attach.spi
             </Export-Package>
           </instructions>
         </configuration>
